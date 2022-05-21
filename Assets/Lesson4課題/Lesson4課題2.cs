@@ -9,14 +9,10 @@ public class Lesson4課題2 : MonoBehaviour
     {
         int []array={23,44,19,7,32};
 
-        for (int i=0; i<array.Length; i++)
+        for (int i=4; i>=0; i--)
         {
-            Array.Reverse(array);
-            {
-                Debug.Log(array[i]);
-            }
+            Debug.Log(array[i]);
         }
-        
     }
 
     // Update is called once per frame
