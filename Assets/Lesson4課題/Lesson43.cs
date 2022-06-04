@@ -25,8 +25,9 @@ public class LBoss
     {
         if (mp>=5)
         {
-            Debug.Log("魔法攻撃をした。残りMPは"+this.mp);
             this.mp -= mpcost;
+            Debug.Log("魔法攻撃をした。残りMPは"+this.mp);
+        }    
         else
         {
             Debug.Log("MPが足りないため、魔法が使えない");
@@ -34,7 +35,7 @@ public class LBoss
     }
 }
 
-public class Lesson4応用 : MonoBehaviour
+public class Lesson43 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -46,7 +47,15 @@ public class Lesson4応用 : MonoBehaviour
         lastboss.Attack();
         //防御用の関数を呼び出す
         lastboss.Defence(3);
-        lastboss.Magic(5);
+        
+
+        
+        
+        for(int i=0; i<11; i++)
+        {
+            lastboss.Magic(5);
+        }
+        
     }
 
     // Update is called once per frame
